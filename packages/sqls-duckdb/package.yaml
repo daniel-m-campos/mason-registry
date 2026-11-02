@@ -1,0 +1,16 @@
+---
+name: sqls-duckdb
+description: sqls, the SQL language server, built with DuckDB support (fork of sqls-server/sqls while the driver is upstreamed).
+homepage: https://github.com/daniel-m-campos/sqls
+licenses:
+  - MIT
+languages:
+  - SQL
+categories:
+  - LSP
+source:
+  id: pkg:golang/github.com/daniel-m-campos/sqls@v0.2.48-duckdb.1
+bin:
+  sqls: golang:sqls
+neovim:
+  lspconfig: sqls
